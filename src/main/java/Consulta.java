@@ -14,7 +14,11 @@ import java.util.logging.Logger;
 @WebServlet("/Consulta")
 public class Consulta extends HttpServlet {
 
-    // Mètode per fer la consulta a la base de dades
+    /**
+     * 
+     * @param out
+     * @throws SQLException
+     */
     private void consultarLlibres(PrintWriter out) throws SQLException {
         // Connexió i consulta
         try (Connection conn = Connexio.getConnexio()) {
