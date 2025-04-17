@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <welcome-file-list>
+        <welcome-file>llibreria.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>Consulta</servlet-name>
+        <servlet-class>Consulta</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Consulta</servlet-name>
+        <url-pattern>/Consulta</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Insertar</servlet-name>
+        <servlet-class>Insertar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Insertar</servlet-name>
+        <url-pattern>/Insertar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Modificar</servlet-name>
+        <servlet-class>Modificar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Modificar</servlet-name>
+        <url-pattern>/Modificar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Eliminar</servlet-name>
+        <servlet-class>Eliminar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Eliminar</servlet-name>
+        <url-pattern>/Eliminar</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
